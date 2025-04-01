@@ -14,37 +14,7 @@ class HealthIcon extends FlxSprite
 
 	
 	public var noAaChars:Array<String> = [
-		'dave-angey',
-		'dave-annoyed-3d',
-		'bambi-3d',
-		'bf-pixel',
-		'gf-pixel',
-		'bambi-unfair',
-		'bambi-piss-3d',
-		'bandu',
-		'the-two-dunkers',
-		'tunnel-dave',
-		'split-dave-3d',
-		'og-dave',
-		'og-dave-angey',
-		'garrett',
-		'badai',
-		'3d-bf',
-		'RECOVERED_PROJECT',
-		'RECOVERED_PROJECT_2',
-		'RECOVERED_PROJECT_3',
-		'bandu-candy',
-		'bandu-origin',
-		'bandu-scaredy',
-		'sart-producer',
-		'sart-producer-night',
-		'bambom',
-		'ringi',
-		'bendu',
-		'dave-wheels',
-		'afnfg-boyfriend',
-		'3d-bf-old',
-		'cameo-origin',
+		'dave-angey'
 	];
 
 	public var charPublic:String = 'bf';
@@ -62,84 +32,16 @@ class HealthIcon extends FlxSprite
 			loadGraphic(Paths.image('iconGrid'), true, 150, 150);
 	
 			addIcon('face', 58);
-
-			addIcon('ringi', 28);
-
-			addIcon('bambom', 30);
-
-			addIcon('bendu', 32);
 	
 			addIcon('bf', 0);
 
-			addIcon('3d-bf', 34);
+			addIcon('black', 4);
 
-			addIcon('playrobot', 38);
+			addIcon('white', 6);
 
-			addIcon('playrobot-crazy', 38);
-
-			addIcon('diamond-man', 40);
-
-			addIcon('hall-monitor', 42);
-
-			addIcon('bambi-good', 44);
-
-			addIcon('dupers', 46);
-
-			addIcon('sart-producer', 26);
-
-			addIcon('sart-producer-night', 26);
-
-			addIcon('dave-wheels', 36);
-	
-			addIcon('tunnel-bf', 0);
-		
 			addIcon('bf-old', 2);
-
-			addIcon('3d-bf-old', 54);
 		
 			addIcon('gf', 57, true);
-
-			addIcon('bambi-unfair', 4);
-			
-			addIcon('unfair-junker', 4);
-	
-			addIcon('bambi-piss-3d', 6);
-			
-			addIcon('split-dave-3d', 16);
-	
-			addIcon('garrett', 20);
-	
-			addIcon('badai', 18);
-	
-			addIcon('bandu', 8);
-	
-			addIcon('bandu-candy', 48);
-	
-			addIcon('bandu-origin', 8);
-
-			addIcon('cameo-origin', 60);
-
-			addIcon('bandu-scaredy', 8);
-	
-			addIcon('tunnel-dave', 12);
-	
-			addIcon('og-dave', 14);
-	
-			addIcon('og-dave-angey', 14);
-	
-			addIcon('the-two-dunkers', 10);
-	
-			addIcon('dave-png', 22);
-	
-			addIcon('dave-good', 22);
-			
-			addIcon('RECOVERED_PROJECT', 24);
-
-			addIcon('RECOVERED_PROJECT_2', 50);
-
-			addIcon('RECOVERED_PROJECT_3', 52);
-
-			addIcon('afnfg-boyfriend', 0);
 	
 			animation.play('face');
 		}

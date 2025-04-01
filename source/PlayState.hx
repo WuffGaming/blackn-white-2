@@ -4586,88 +4586,12 @@ class PlayState extends MusicBeatState
 				{
 					tweenCamIn();
 				}
-			case "tristan" | 'tristan-beta':
-				dad.y += 325;
-				dad.x += 100;
-			case 'dave' | 'dave-annoyed' | 'dave-splitathon':
-				{
-					dad.y += 160;
-					dad.x += 250;
-				}
-			case 'dave-old':
-				{
-					dad.y += 270;
-					dad.x += 150;
-				}
-			case 'dave-angey' | 'dave-annoyed-3d' | 'dave-3d-standing-bruh-what':
-				{
-					dad.y += 0;
-					dad.x += 150;
-				}
-			case 'bambi-3d' | 'bambi-piss-3d':
-				{
-					dad.y -= 250;
-					dad.x -= 185;
-				}
-			case 'ringi':
-				dad.y -= 475;
-				dad.x -= 455;
-			case 'bambom':
-				dad.y -= 375;
-				dad.x -= 500;
-			case 'bendu':
-				dad.y += 50;
-				dad.x += 10;
-			case 'bambi-unfair':
-				{
-					dad.y += 100;
-				}
-			case 'bambi' | 'bambi-old' | 'bambi-bevel' | 'what-lmao' | 'bambi-good':
-				{
-					dad.y += 400;
-				}
-			case 'bambi-new' | 'bambi-farmer-beta':
-				{
-					dad.y += 450;
-					dad.x += 200;
-				}
-			case 'dave-wheels':
-				dad.x += 100;
-				dad.y += 300;
-			case 'bambi-splitathon':
-				{
-					dad.x += 175;
-					dad.y += 400;
-				}
-			case 'dave-png':
-				dad.x += 81;
-				dad.y += 108;
-			case 'bambi-angey':
-				dad.y += 450;
-				dad.x += 100;
-			case 'RECOVERED_PROJECT':
-				dad.setPosition(-307, 10);
-			case 'RECOVERED_PROJECT_2' | 'RECOVERED_PROJECT_3':
-				dad.y += -320;
-				dad.x += -600;
-			case 'sart-producer':
-				dad.x -= 750;
-				dad.y -= 360;
-			case 'garrett':
-				dad.y += 65;
-			case 'diamond-man':
-				dad.y += 25;
-			case 'og-dave' | 'og-dave-angey':
-				dad.x -= 190;
-			case 'hall-monitor':
-				dad.x += 45;
-				dad.y += 185;
-			case 'playrobot':
-				dad.y += 265;
-				dad.x += 150;
-			case 'playrobot-crazy':
-				dad.y += 365;
-				dad.x += 165;
+			case 'black':
+				dad.y = 320;
+				dad.x = -60;
+			case 'white':
+				dad.y = -150;
+				dad.x = -170;
 		}
 	}
 	

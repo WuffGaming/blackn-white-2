@@ -813,6 +813,61 @@ class Character extends FlxSprite
 
 				flipX = true;
 
+			case 'black':
+				var tex = Paths.getSparrowAtlas('characters/main/girlboy');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singUPmiss', 'MISSED up', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'MISSED left', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'MISSED right', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'MISSED down', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -21, 10);
+				addOffset("singRIGHT", -44, 0);
+				addOffset("singLEFT", -38, 0);
+				addOffset("singDOWN", -17, -21);
+				addOffset("singUPmiss", -15, 115);
+				addOffset("singRIGHTmiss", -44, 0);
+				addOffset("singLEFTmiss", -36, 47);
+				addOffset("singDOWNmiss", -7, 29);
+
+				playAnim('idle');
+
+				nativelyPlayable = true;
+
+				barColor = FlxColor.fromRGB(255, 255, 255);
+
+				flipX = true;
+
+			case 'white':
+				var tex = Paths.getSparrowAtlas('characters/main/coolguy');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('trance', 'trance', 24, false);
+				animation.addByPrefix('appear', 'huh', 24, false);
+
+				addOffset('idle');
+				addOffset('trance', 24, -4);
+				addOffset('appear', 0, 6);
+				addOffset("singUP", 66, 22);
+				addOffset("singRIGHT", -123, 21);
+				addOffset("singLEFT", -45, -12);
+				addOffset("singDOWN", -45, -96);
+
+				playAnim('idle');
+
+				barColor = FlxColor.fromRGB(255, 255, 255);
+
+
 			case 'tunnel-bf':
 				var tex = Paths.getSparrowAtlas('characters/dave/tunnel_bf');
 				frames = tex;

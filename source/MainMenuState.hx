@@ -29,7 +29,7 @@ class MainMenuState extends MusicBeatState
 
 	var realMenuItems:Int = 4;
 
-	var optionShit:Array<String> = ['story mode', 'extras'];
+	var optionShit:Array<String> = ['extras'];
 
 	var newGaming:FlxText;
 	var newGaming2:FlxText;

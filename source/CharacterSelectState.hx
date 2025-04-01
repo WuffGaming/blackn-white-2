@@ -60,12 +60,7 @@ class CharacterSelectState extends MusicBeatState
 	
 	public var characters:Array<CharacterInSelect> = 
 	[
-		new CharacterInSelect(['bf', '3d-bf', 'afnfg-boyfriend'], ["Boyfriend", '3D Boyfriend', 'AFNFG Boyfriend']),
-		new CharacterInSelect(['split-dave-3d', 'tunnel-dave', 'og-dave', 'dave-wheels'], ['Disability Dave', 'Decimated Dave', 'Algebra Dave', 'Dave but Awesome']),
-		new CharacterInSelect(['bambi-piss-3d'], ['Angry 3D Bambi']),
-		new CharacterInSelect(['unfair-junker'], ['Unfair Expunged (Facing Forward)']),
-		new CharacterInSelect(['bandu', 'badai', 'bandu-origin'], ['Bandu', 'Badai', 'Bandu (Origin)']),
-		new CharacterInSelect(['cameo-origin'], ['Cameo'])
+		new CharacterInSelect(['black', 'bf'], ['Girlfriend', 'Boyfriend]),
 	];
 	public function new() 
 	{
@@ -136,12 +131,12 @@ class CharacterSelectState extends MusicBeatState
 		FlxG.camera.zoom = 0.75;
 
 		//create character
-		char = new Boyfriend(FlxG.width / 2, FlxG.height / 2, "bf");
+		char = new Boyfriend(FlxG.width / 2, FlxG.height / 2, "girlboy");
 		char.screenCenter();
 		char.y = 350;
 		add(char);
 		
-		characterText = new FlxText((FlxG.width / 9) - 50, (FlxG.height / 8) - 225, "Boyfriend");
+		characterText = new FlxText((FlxG.width / 9) - 50, (FlxG.height / 8) - 225, "Girlfriend");
 		characterText.font = 'Comic Sans MS Bold';
 		characterText.setFormat(Paths.font("comic.ttf"), 90, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		characterText.autoSize = false;
@@ -277,27 +272,7 @@ class CharacterSelectState extends MusicBeatState
 
 		switch (char.curCharacter)
 		{
-			case "tristan" | 'tristan-beta' | 'tristan-golden':
-				char.y = 100 + 325;
-			case 'dave' | 'dave-annoyed' | 'dave-splitathon':
-				char.y = 100 + 160;
-			case 'dave-old':
-				char.y = 100 + 270;
-			case 'dave-angey' | 'dave-annoyed-3d' | 'dave-3d-standing-bruh-what':
-				char.y = 100;
-			case 'bambi-3d' | 'bambi-piss-3d' | 'bandu' | 'bandu-candy' | 'unfair-junker':
-				char.y = 100 + 350;
-			case 'bambi-unfair':
-				char.y = 100 + 575;
-			case 'bambi' | 'bambi-old' | 'bambi-bevel' | 'what-lmao':
-				char.y = 100 + 400;
-			case 'bambi-new' | 'bambi-farmer-beta':
-				char.y = 100 + 450;
-			case 'bambi-splitathon':
-				char.y = 100 + 400;
-			case 'bambi-angey':
-				char.y = 100 + 450;
-			case 'bf' | '3d-bf' | 'bf-pixel' | 'bf-christmas' | 'afnfg-boyfriend' | 'cameo':
+			case 'bf' | 'black':
 				//dont do anything
 			default: char.y = 100;
 		}
