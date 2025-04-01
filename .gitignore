@@ -1,0 +1,8 @@
+export/
+.vscode/
+.vs/
+.git
+APIStuff.hx
+art/flashFiles/
+art/Source Files/
+/.vs/slnx.sqlite

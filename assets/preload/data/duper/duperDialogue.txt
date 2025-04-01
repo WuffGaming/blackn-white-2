@@ -1,0 +1,7 @@
+black:none:It's been a normal day for Boyfriend and Girlfriend.
+:none:They've had some fun with Dave, and wanted to see if bambimad could take them on next..
+:none:Unfortunately, he isn't very happy.
+off_black:bf:Beep?
+:bambimad:WHY ARE YOU BACK?! YOU FUCKING CHEATER!!!
+:bf:Bop da.
+:bambimad:YOU'RE GOING DOWN.
